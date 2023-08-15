@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Mochiy+Pop+P+One&family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.header .logo
+{
+    font-size: 1.7em;
+    color: #fff;
+    text-decoration: none;
+}
+.header .nav a
+{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.nav a::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #982676 ;
+    border-radius: 5px;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.nav a:hover::after
+{
+    transform: scaleX(1);
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(image4.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding: 80px 200px 0;
+    align-items: center;
+}
+section .content
+{
+    max-width: 600px;
+    color: #fff;
+}
+.content h2
+{
+    font-size: 3em;
+    letter-spacing: 0.3em;
+}
+.content p
+{
+    margin: 10px 0 40px;
+}
+
+.submit
+{
+    text-decoration: none;
+    border: none;
+    font-size: 1.2em;
+    background: transparent;
+}
+button
+{
+    position: relative;
+    left: 100px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.input-box i
+{
+    position: absolute;
+    top: 55px;
+    left: 400px;
+    font-size: 1.2em;
+    color: #fff;
+}
+.input-box
+{
+    position: relative;
+    left: 100px;
+    width: 100%;
+    height: 50px;
+    padding: 40px 0;
+}
+.input-box .input
+{
+    
+    width: 450px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    background: transparent;
+    outline: none;
+    font-size: 1.1em;
+}
+::placeholder
+{
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0 20px;
+}
+button:hover
+{
+    background-color: #982676;
+}
+.sign-link
+{
+    position: relative;
+    left: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.sign-link a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.sign-link a:hover
+{
+    text-decoration: underline;
+}
+.login
+{
+    position: relative;
+    width: 440px;
+}
+.login h2
+{
+    position: relative;
+    left: 250px;
+    width: 100%;
+    color: #fff;
+}
